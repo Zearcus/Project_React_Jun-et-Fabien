@@ -26,10 +26,6 @@
     "name": {
       "type": "string",
       "required": false
-    },
-    "show": {
-      "type": "boolean",
-      "private": true
     }
   }
 }
