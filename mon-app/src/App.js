@@ -4,10 +4,14 @@ import {
   Routes
 } from 'react-router-dom'
 
-import Acceuil from '../components/Acceuil';
-import Store from '../components/Store';
-import Support from '../components/Support';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+
+
+import Acceuil from './components/Acceuil';
+import Store from './components/Store';
+import Support from './components/Support';
+
 
 function App(){
   return (
