@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import { Container, Nav, NavDropdown, Navbar, Form, FormControl, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
-
+import '../style/Bar_menu.css';
 
 class Bar_menu extends Component {
 
     render() {
         return (
+        
             <Navbar bg="light" expand="lg">
                 <Container fluid>
                     <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
@@ -32,18 +33,10 @@ class Bar_menu extends Component {
                                 Link
                             </Nav.Link>
                         </Nav>
-                        <Form className="d-flex">
-                            <FormControl
-                                type="search"
-                                placeholder="Search"
-                                className="me-2"
-                                aria-label="Search"
-                            />
-                            <Button variant="outline-success">Search</Button>
-                        </Form>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
+        
         );
     }
 }
