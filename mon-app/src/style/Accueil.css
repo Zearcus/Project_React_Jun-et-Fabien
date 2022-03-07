@@ -9,12 +9,13 @@ div.presentation{
     align-items: center;
     width: 100%;
     height: 500px;
-    background-image: url(../pictures/ok.jpg);
+    background-image: url(../pictures/kingship.png);
     background-size: cover;
     background-position: center center;
 }
 
 h1{
+    color: black;
     padding-bottom: 50px;
 }
 
@@ -22,41 +23,59 @@ p{
     margin: 0;
     padding: .0;
     font-size: 22px;
-    color:aliceblue;
+    text-shadow: 5px 5px 5px black;
+    color:black;
 }
 
 div.nft {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
     width: 100%;
-    height: 500px;
+    height: 400px;
     background-position: center center;
 }
 
 h2{
+    padding-top: 20px;
     padding-bottom: 50px;
 }
 
 p.nft{
+    font-size: 20px;
+    padding-left: 20px;
     color: black;
+    text-shadow: black;
 }
 
-/* video{
-    margin: 0;
-    object-fit: cover;
+iframe{
     width: 100%;
-    height: 100%;
-} */
+    height:90%;
+    border-radius: 20px;
+}
 
-div.who-we-are{
+
+div.Support{
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 500px;
+    height: 450px;
     background-image: url(../pictures/ok.jpg);
     background-size: cover;
     background-position: center center;
 }
 
+h2.Support{
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 50px;
+}
+
+p.Support{
+    color: white;
+    text-shadow: black;
+}
+
+Button.Support{
+    margin-top: 100px;
+}
