@@ -1,7 +1,21 @@
+body{
+    margin : 0;
+    padding : 0;
+}
+
+
 .cci{
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px 1px;
 }
 
 .cco{
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.showcase{
+    justify-content: center;
+
+}
+
+.cardcontent{
+    text-align: center;
 }

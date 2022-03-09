@@ -10,7 +10,8 @@ class Main_menu extends Component {
     return (
       <Navbar className="navbar"collapseOnSelect expand="lg" bg="white" variant="dark">
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand>
+          <Link to="/">
           <img
                 src={dodge_coin}
                 width="100"
@@ -18,13 +19,14 @@ class Main_menu extends Component {
                 className="d-inline-block align-top"
                 alt="React Bootstrap logo"
               />
+           </Link>   
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
-            <Link to="/">Home</Link>
-            <Link to="/store">Store</Link>
-            <Link to="/support">Contact</Link>         
+            <Link to="/">HOME</Link>
+            <Link to="/store">STORE</Link>
+            <Link to="/support">SUPPORT</Link>         
             </Nav>
               <Button variant="outlinelight">
                <Link to="/Cart">

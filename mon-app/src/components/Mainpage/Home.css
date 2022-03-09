@@ -1,0 +1,35 @@
+.inlineStyle{
+    background-color: aliceblue;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    font-family: 'Spartan',sans-serif;
+    text-align: justify;
+   }
+   
+   .topStyle{
+     background-color: aliceblue;
+     left: 50%;
+     top: 10%;
+     position: absolute;
+     padding: 20px;
+     padding: top 20px;
+     transform: translate(-50%, -50%);
+     border-radius: 10px;
+     font-family: 'Spartan',sans-serif;
+   }
+   
+   .presentation{
+     color: white;
+     left: 50%;
+     top: 50%;
+     position: absolute;
+     padding: 20px;
+     transform: translate(-50%, -50%);
+     border-radius: 5px;
+     font-family: 'Spartan',sans-serif;
+     text-align: justify;
+   }

@@ -4,7 +4,7 @@
   "info": {
     "singularName": "nft",
     "pluralName": "nfts",
-    "displayName": "NFT",
+    "displayName": "nft",
     "description": ""
   },
   "options": {
@@ -12,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "NFT": {
+    "picture": {
       "type": "media",
       "multiple": true,
       "required": false,
@@ -26,6 +26,12 @@
     "name": {
       "type": "string",
       "required": false
+    },
+    "category": {
+      "type": "richtext"
+    },
+    "description": {
+      "type": "text"
     }
   }
 }
