@@ -21,7 +21,7 @@ class Store extends Component {
                                 <Row className="showcase">
                                 <Col md={{ span: 6, offset: 3 }}>
                                 <Card style={{ width: '18rem' }} className="cardcontent">
-                                <Card.Img variant="top" src={nft.attributes.picture.data && `http://localhost:1337${nft.attributes.picture.data.url}`}/>
+                                <Card.Img variant="top" src={nft.attributes.picture.data && `http://localhost:1337${nft.attributes.picture.data[0].attributes.url}`}/>
                                 <Card.Body>
                                     <Card.Title>{nft.attributes.name}</Card.Title>
                                     <Card.Text>
