@@ -19,3 +19,12 @@ body{
 .cardcontent{
     text-align: center;
 }
+
+.filter{
+    display : flex;
+}
+
+.panel{
+    display : flex ;
+    justify-content: space-between;
+}

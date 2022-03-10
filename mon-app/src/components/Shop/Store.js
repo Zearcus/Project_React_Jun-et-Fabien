@@ -1,37 +1,63 @@
-import React, { Component } from 'react';
-import { Button, Card, Row, Container, Col } from 'react-bootstrap';
+import React, { Component, useState, useEffect } from 'react';
+import { Link } from 'react-router-dom'
+import { Button, Card, Row, Container, Col, DropdownButton, Dropdown } from 'react-bootstrap';
 import Main_menu from "../Nav/Main_menu";
 
 
 
+function Store(props) {
 
-class Store extends Component {
 
-    render() {
-        console.log(this.props.nft);
+        console.log(props.cart);
         return (
             <div>
                 <div>
                     <Main_menu />
                 </div>
-                <div>
-                    {this.props.nft.data && this.props.nft.data.map((nft) => (
-                        <div>
+                <div className="filter">
+                    <form>
+                        <label>
+                            <input placeholder="Search" type="text" name="name" />
+                        </label>
+
+                        <input type="submit" value="SEARCH" />
+
+                    </form>
+                    <DropdownButton id="dropdown-basic-button" title="Dropdown button">
+                        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+                        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+                        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                    </DropdownButton>
+                </div>
+                <div >
+                    {props.nft.data && props.nft.data.map((nft, i) => (
+                        <div key={i}>
                             <Container>
                                 <Row className="showcase">
-                                <Col md={{ span: 6, offset: 3 }}>
-                                <Card style={{ width: '18rem' }} className="cardcontent">
-                                <Card.Img variant="top" src={nft.attributes.picture.data && `http://localhost:1337${nft.attributes.picture.data[0].attributes.url}`}/>
-                                <Card.Body>
-                                    <Card.Title>{nft.attributes.name}</Card.Title>
-                                    <Card.Text>
-                                        {nft.attributes.description}
-                                    </Card.Text>
-                                  <Button variant="dark">Purchase</Button> 
-           
-                                </Card.Body>
-                            </Card>
-                                </Col>
+                                    <Col md={{ span: 6, offset: 3 }}>
+                                        <Card style={{ width: '18rem' }} className="cardcontent">
+                                            <Card.Img variant="top" src={nft.attributes.picture.data && `http://localhost:1337${nft.attributes.picture.data[0].attributes.url}`} />
+                                            <Card.Body>
+                                                <Card.Title>{nft.attributes.name}</Card.Title>
+                                                <Card.Text>
+                                                    {nft.attributes.description}
+                                                </Card.Text>
+                                                <Card.Text>
+                                                    {nft.attributes.price}$
+                                                </Card.Text>
+
+                                                <Button variant="dark"
+                                                    value={nft.attributes.price}
+                                                    onClick={()=> props.addToCart(nft)}
+                                                >
+
+                                                    Purchase</Button>
+
+
+
+                                            </Card.Body>
+                                        </Card>
+                                    </Col>
                                 </Row>
                             </Container>
 
@@ -42,7 +68,7 @@ class Store extends Component {
 
 
         );
-    }
 }
+
 
 export default Store;

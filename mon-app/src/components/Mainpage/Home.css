@@ -11,7 +11,7 @@
    }
    
    .topStyle{
-     background-color: aliceblue;
+    color: white;
      left: 50%;
      top: 10%;
      position: absolute;
@@ -33,3 +33,17 @@
      font-family: 'Spartan',sans-serif;
      text-align: justify;
    }
+
+.videopre{
+  display :flex;
+  padding: 30px;
+}
+
+
+.topStyle{
+  font-family: 'Comfortaa', cursive;
+  font-size: 60px;
+}
+
+.p{
+  font-family: 'Roboto Mono', monospace;}
