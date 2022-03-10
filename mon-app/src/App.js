@@ -19,7 +19,6 @@ class App extends Component {
     this.state = {
       nft: [],
       cart: [],
-      setCart:[]
     }
   }
   

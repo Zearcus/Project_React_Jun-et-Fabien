@@ -1,5 +1,5 @@
 import React from 'react'
-import { Navbar, Container, Col, Row } from 'react-bootstrap'
+import { Navbar, Container, Col, Row, Button } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import dodge_coin from '../../pictures/dodge_coin.png'
 import CustomForm from '../Shop/CustomForm'
@@ -43,9 +43,9 @@ function Cart(props) {
                                 
                                 <div><p>{cart.attributes.name}</p></div>
                                 <div><p>{cart.attributes.price}$</p></div>
-                                <button variant="dark"
+                                <Button variant="danger"
                                     onClick={()=> props.removeArticle(cart)}
-                                >Remove</button>
+                                >Remove</Button>
                             </div>
                         ))}
                         
