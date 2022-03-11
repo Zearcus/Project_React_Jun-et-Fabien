@@ -17,7 +17,7 @@ function Store(props) {
                 <div className="filter">
                     <form>
                         <label>
-                            <input placeholder="Search" type="text" name="name" />
+                            <input placeholder="Search Article" type="text" name="name"  />     {/*value={this.state.search} onChange={(e) => this.handleChange(e)} */}
                         </label>
 
                         <input type="submit" value="SEARCH" />
@@ -52,9 +52,6 @@ function Store(props) {
                                                 >
 
                                                     Purchase</Button>
-
-
-
                                             </Card.Body>
                                         </Card>
                                     </Col>

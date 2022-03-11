@@ -27,14 +27,26 @@
       "type": "string",
       "required": false
     },
-    "category": {
-      "type": "richtext"
-    },
     "description": {
       "type": "text"
     },
     "price": {
       "type": "float"
+    },
+    "Common": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::nft.nft"
+    },
+    "Gold": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::nft.nft"
+    },
+    "Legendary": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::nft.nft"
     }
   }
 }

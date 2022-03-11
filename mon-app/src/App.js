@@ -19,9 +19,9 @@ class App extends Component {
     this.state = {
       nft: [],
       cart: [],
+      search:'',
     }
   }
-  
 
   addToCart = (article)=>{
     if(this.state.cart){
@@ -43,6 +43,14 @@ class App extends Component {
       }, () => localStorage.setItem('cart', JSON.stringify(this.state.cart)))
     }
   }
+
+  handleChange = (e) => {
+    e.preventDefault()
+    let name = e.target.name
+    this.setState({
+        [name]: e.target.value
+    })
+}
   
   componentDidMount = async () => {
     const response = await fetch('http://localhost:1337/api/nfts?populate=*', { method: 'GET', headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' } })
@@ -57,7 +65,7 @@ class App extends Component {
       <Router>
         <Routes>
           <Route exact path='/' element={<Home />} />
-          <Route exact path='/Store' element={<Store nft={this.state.nft} cart={this.state.cart} addToCart={this.addToCart} />} />
+          <Route exact path='/Store' element={<Store nft={this.state.nft} cart={this.state.cart} addToCart={this.addToCart} handleChange={this.handleChange} />} />
           <Route exact path='/Cart' element={<Cart cart={this.state.cart} removeArticle={this.removeArticle} />} />
           <Route exact path='/Support' element={<Support />} />
         </Routes>

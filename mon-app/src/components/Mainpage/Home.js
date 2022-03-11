@@ -7,11 +7,9 @@ import './Home.css'
 // import image
 import homepic from "../../pictures/homepic.png";
 import thief from '../../pictures/thief.gif';
-import { Container } from "react-bootstrap";
 
 const image4 =
   "https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/empire-state-building-black-and-white-square-format-john-farnan.jpg";
-
 
 class Home extends Component {
   render() {
@@ -23,12 +21,12 @@ class Home extends Component {
             <h1 className="topStyle">M'aime NFT</h1>
             <p className="presentation">
               <img src={thief} height="100" width="100" />
-              Meta NFT le meilleur site pour acheter vos NFT facilement et sans engagement.
-              Découvrez de nombreux NFT dans notre boutique qui n'attendent plus que vous !!
+              Meta NFT the best site to buy your NFT easily and without commitment.
+              Discover many NFT in our shop which are waiting for you !
               <img src={thief} height="100" width="100" /></p>
           </div>
         </Parallax>
-        <h2 style={{ paddingBottom: "20px" }}>Qu'est ce qu'un NFT ?</h2>
+        <h2 style={{ paddingBottom: "20px" }}>What is an NFT?</h2>
         <div className="videopre">
         <div className="NFT" style={{ }}>
           <iframe src="https://www.youtube.com/embed/Oz9zw7-_vhM"
@@ -40,9 +38,9 @@ class Home extends Component {
           </iframe>
         </div>
         <div>
-          <p className="nft" style={{ textAlign: 'justify', width: '70%',paddingLeft: '50px'}}>Et bien c'est assez simple,Mais qu’est-ce qu’un NFT exactement ? Encore un accronyme assez opaque de prime abord. NFT vient de l’anglais Non Fongible Token soit jeton non fongible.  Les NFT sont nouveaux et fascinants.
-            Il s’agit de biens numériques uniques, en circulation depuis 2014, dont les transactions se font en cryptomonnaie.
-            Utilisés pour indiquer la propriété d’un objet numérique (souvent une œuvre d’art numérique), ces jetons bouleversent les marchés du monde entier, aussi bien dans l’art et les jeux vidéo que dans l’événementiel et les assurances.
+          <p className="nft" style={{ textAlign: 'justify', width: '70%',paddingLeft: '50px'}}>Well, it's quite simple, but what exactly is an NFT? Another rather opaque acronym at first glance. NFT stands for Non Fungible Token.  NFTs are new and fascinating.
+            They are unique digital assets, in circulation since 2014, which are transacted in cryptocurrency.
+            Used to indicate ownership of a digital object (often a piece of digital art), these tokens are disrupting markets around the world, from art and video games to events and insurance.
           </p>
         </div>
         </div>
@@ -51,8 +49,8 @@ class Home extends Component {
           strength={200}
         >
           <div style={{ height: 500 }}>
-            <h2 className="topStyle">Qui sommes-nous ?</h2>
-            <p className="inlineStyle">Nous sommes l'élites de la vente de NFT gamin nous ne sommes pas des amateurs ! </p>
+            <h2 className="topStyle">Who are we?</h2>
+            <p className="inlineStyle">We are the elite of NFT sales kid we are not amateurs! </p>
           </div>
         </Parallax>
 
